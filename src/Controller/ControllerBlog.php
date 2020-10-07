@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ControllerBlog extends AbstractController
 {
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/blog", name="blogg")
      */
     public function blog()
     {
