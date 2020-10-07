@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBase.php
+// src/Controller/ControllerTours.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBase extends AbstractController
+class ControllerTours extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/tours", name="tours")
      */
-    public function index()
+    public function tours()
     {
-        return $this->render('bratan.html.twig',[]);
+        return $this->render('tours.html.twig',[]);
     }
 }
 ?>

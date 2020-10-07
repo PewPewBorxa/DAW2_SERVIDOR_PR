@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBase.php
+// src/Controller/ControllerSingleBlog.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBase extends AbstractController
+class ControllerSingleBlog extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/sb", name="sb")
      */
-    public function index()
+    public function sb()
     {
-        return $this->render('bratan.html.twig',[]);
+        return $this->render('single-blog.html.twig',[]);
     }
 }
 ?>

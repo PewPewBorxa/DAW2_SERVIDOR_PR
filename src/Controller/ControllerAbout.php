@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBase.php
+// src/Controller/ControllerAbout.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBase extends AbstractController
+class ControllerAbout extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/about", name="about")
      */
-    public function index()
+    public function about()
     {
-        return $this->render('bratan.html.twig',[]);
+        return $this->render('about.html.twig',[]);
     }
 }
 ?>

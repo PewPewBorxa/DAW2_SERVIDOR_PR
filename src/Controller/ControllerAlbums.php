@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBase.php
+// src/Controller/ControllerAlbums.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBase extends AbstractController
+class ControllerAlbums extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/albums", name="albums")
      */
-    public function index()
+    public function albums()
     {
-        return $this->render('bratan.html.twig',[]);
+        return $this->render('albums.html.twig',[]);
     }
 }
 ?>

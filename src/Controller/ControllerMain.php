@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBase.php
+// src/Controller/ControllerMain.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBase extends AbstractController
+class ControllerMain extends AbstractController
 {
     /**
-     * @Route("/", name="index")
+     * @Route("/main", name="main")
      */
-    public function index()
+    public function main()
     {
-        return $this->render('bratan.html.twig',[]);
+        return $this->render('main.html.twig',[]);
     }
 }
 ?>
