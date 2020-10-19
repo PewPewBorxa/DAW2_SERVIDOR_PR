@@ -1,19 +1,19 @@
 <?php
-// src/Controller/ControllerBlog.php
+// src/Controller/ControllerRegister.php
 namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ControllerBlog extends AbstractController
+class ControllerRegister extends AbstractController
 {
     /**
-     * @Route("/blog", name="blog")
+     * @Route("/register", name="register")
      */
-    public function blog()
+    public function register()
     {
-        return $this->render('blog.html.twig',[]);
+        return $this->render('register.html.twig',[]);
     }
 }
 ?>
