@@ -13,7 +13,19 @@ class ControllerLogin extends AbstractController
      */
     public function login()
     {
-        return $this->render('login.html.twig',[]);
+        return $this->render('login.html.twig', [
+            'rutaAbout' => '/nosotros',
+            'rutaAlbum' => '/productos',
+            'rutaAlbumD' => '/album_details',
+            'rutabase' => '/',
+            'rutaBlog' => '/blog',
+            'rutaContact' => '/contacta',
+            'rutaGallery' => '/gallery',
+            'rutaLogin' => '/login',
+            'rutaRegister' => '/register',
+            'rutaSb' => '/sb',
+            'rutaTicket' => '/ticket',
+            'rutaTours' => '/tours',
+        ]);
     }
 }
-?>

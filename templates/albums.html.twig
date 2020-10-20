@@ -7,13 +7,13 @@
 	<meta name="keywords" content="music, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="/css/slicknav.min.css"/>
+	<link rel="stylesheet" href="/css/owl.carousel.min.css"/>
 
 	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="/css/style.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -24,9 +24,9 @@
 </head>
 <body>
 	<!-- Page Preloder -->
-	<div id="preloder">
+	{# <div id="preloder">
 		<div class="loader"></div>
-	</div>
+	</div> #}
 
 	<!-- Header Section -->
 	<header>
@@ -34,25 +34,26 @@
 			<div class="row">
 				<div class="col-lg-2">
 					<a href="/" class="site__logo">
-						<img src="img/logo.png" alt="">
+						<img src="/img/logo.png" alt="">
 					</a>
 				</div>
 				<div class="col-lg-8">
 					<ul class="main__menu">
 						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/albums" class="menu--active">Albums</a></li>
-						<li><a href="/tours">Tours</a></li>
+						<li><a href={{rutaAbout}}>About</a></li>
+						<li><a href={{rutaAlbum}} class="menu--active">Albums</a></li>
+						<li><a href={{rutaTours}}>Tours</a></li>
 						<li><a href="#">Pages</a>
 							<ul class="sub__menu">
-								<li><a href="/gallery">Gallery</a></li>
-								<li><a href="/ticket">Ticket</a></li>
-								<li><a href="/albums_details">Albums details</a></li>
-								<li><a href="/sb">Blog single</a></li>
+								<li><a href={{rutaGallery}}>Gallery</a></li>
+								<li><a href={{rutaTicket}}>Ticket</a></li>
+								<li><a href={{rutaAlbumD}}>Albums details</a></li>
+								<li><a href={{rutaSb}}>Blog single</a></li>
 							</ul>
 						</li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/contact">Contact</a></li>
+						<li><a href={{rutaBlog}}>Blog</a></li>
+						<li><a href={{rutaContact}}>Contact</a></li>
+						<li><a href={{rutaLogin}} class="site__btn">Login</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 text-lg-right d-none d-lg-block">
@@ -60,7 +61,7 @@
 				</div>
 			</div>
 		</div>
-	</header>       
+	</header>
 	<!-- Header Section end -->
 
 	<!-- Page top section -->
@@ -89,165 +90,68 @@
 				<h2>Discover our newest musicalbums and singles</h2>
 			</div>
 			<div class="row">
+				{# album 1 #}
 				<div class="col-lg-4 col-md-6">
 					<div class="album_card">
 						<div class="album__pic">
-							<img src="img/albums/1.jpg" alt="">
+							<img src={{imagenAlbum1}} alt="">
 							<div class="album__title">
 								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
+									<h4>{{tituloAlbum1}}</h4>
+									<p>{{generoAlbum1}}</p>
 								</div>
 							</div>
 						</div>
 						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
+							<a href="#"><img src="/img/google-play.png" alt=""></a>
+							<a href="#"><img src="/img/itune.png" alt=""></a>
 						</div>
 					</div>
 				</div>
+
+				{# album 2 #}
 				<div class="col-lg-4 col-md-6">
 					<div class="album_card">
 						<div class="album__pic">
-							<img src="img/albums/2.jpg" alt="">
+							<img src={{imagenAlbum2}} alt="">
 							<div class="album__title">
 								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
+									<h4>{{tituloAlbum2}}</h4>
+									<p>{{generoAlbum2}}</p>
 								</div>
 							</div>
 						</div>
 						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
+							<a href="#"><img src="/img/google-play.png" alt=""></a>
+							<a href="#"><img src="/img/itune.png" alt=""></a>
 						</div>
 					</div>
 				</div>
+
+				{# album 3 #}
 				<div class="col-lg-4 col-md-6">
 					<div class="album_card">
 						<div class="album__pic">
-							<img src="img/albums/3.jpg" alt="">
+							<img src={{imagenAlbum3}} alt="">
 							<div class="album__title">
 								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
+									<h4>{{tituloAlbum3}}</h4>
+									<p>{{generoAlbum3}}</p>
 								</div>
 							</div>
 						</div>
 						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/4.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/5.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/6.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/7.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/8.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src="img/albums/9.jpg" alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>Sweet But Psycho</h4>
-									<p>Electronic</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="img/google-play.png" alt=""></a>
-							<a href="#"><img src="img/itune.png" alt=""></a>
+							<a href="#"><img src="/img/google-play.png" alt=""></a>
+							<a href="#"><img src="/img/itune.png" alt=""></a>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="site__pagination">
-				<a href="#" class="active">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#" class="next-page">Next</a>
+				<a href={{r1}} {{claseP1}}>1</a>
+				<a href={{r2}} {{claseP2}}>2</a>
+				<a href={{r3}} {{claseP3}}>3</a>
+				<a href={{rn}} class="next-page">Next</a>
 			</div>
 		</div>
 	</section>

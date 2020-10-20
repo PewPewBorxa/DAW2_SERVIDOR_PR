@@ -9,11 +9,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ControllerAbout extends AbstractController
 {
     /**
-     * @Route("/about", name="about")
+     * @Route("/nosotros", name="nosotros")
      */
     public function about()
     {
-        return $this->render('about.html.twig',[]);
+        return $this->render('about.html.twig', [
+            'rutaAbout' => '/nosotros',
+            'rutaAlbum' => '/productos',
+            'rutaAlbumD' => '/album_details',
+            'rutabase' => '/',
+            'rutaBlog' => '/blog',
+            'rutaContact' => '/contacta',
+            'rutaGallery' => '/gallery',
+            'rutaLogin' => '/login',
+            'rutaRegister' => '/register',
+            'rutaSb' => '/sb',
+            'rutaTicket' => '/ticket',
+            'rutaTours' => '/tours',
+        ]);
     }
 }
-?>

@@ -13,7 +13,19 @@ class ControllerBlog extends AbstractController
      */
     public function blog()
     {
-        return $this->render('blog.html.twig',[]);
+        return $this->render('blog.html.twig', [
+            'rutaAbout' => '/nosotros',
+            'rutaAlbum' => '/productos',
+            'rutaAlbumD' => '/album_details',
+            'rutabase' => '/',
+            'rutaBlog' => '/blog',
+            'rutaContact' => '/contacta',
+            'rutaGallery' => '/gallery',
+            'rutaLogin' => '/login',
+            'rutaRegister' => '/register',
+            'rutaSb' => '/sb',
+            'rutaTicket' => '/ticket',
+            'rutaTours' => '/tours',
+        ]);
     }
 }
-?>

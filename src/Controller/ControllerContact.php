@@ -9,11 +9,23 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ControllerContact extends AbstractController
 {
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contacta", name="contacta")
      */
     public function contact()
     {
-        return $this->render('contact.html.twig',[]);
+        return $this->render('contact.html.twig', [
+            'rutaAbout' => '/nosotros',
+            'rutaAlbum' => '/productos',
+            'rutaAlbumD' => '/album_details',
+            'rutabase' => '/',
+            'rutaBlog' => '/blog',
+            'rutaContact' => '/contacta',
+            'rutaGallery' => '/gallery',
+            'rutaLogin' => '/login',
+            'rutaRegister' => '/register',
+            'rutaSb' => '/sb',
+            'rutaTicket' => '/ticket',
+            'rutaTours' => '/tours',
+        ]);
     }
 }
-?>

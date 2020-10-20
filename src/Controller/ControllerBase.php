@@ -15,14 +15,19 @@ class ControllerBase extends AbstractController
      */
     public function index()
     {
-        $w = false;
-        $hola = ($w)?'Hola, ':'<a href="/login">Login</a>';
-        function bratan($a){echo $a;}
-        return $this->render('bratan.html.twig',[
-            'w1234'=>bratan($hola),
+        return $this->render('bratan.html.twig', [
+            'rutaAbout' => '/nosotros',
+            'rutaAlbum' => '/productos',
+            'rutaAlbumD' => '/album_details',
+            'rutabase' => '/',
+            'rutaBlog' => '/blog',
+            'rutaContact' => '/contacta',
+            'rutaGallery' => '/gallery',
+            'rutaLogin' => '/login',
+            'rutaRegister' => '/register',
+            'rutaSb' => '/sb',
+            'rutaTicket' => '/ticket',
+            'rutaTours' => '/tours',
         ]);
     }
-
-    
 }
-?>
