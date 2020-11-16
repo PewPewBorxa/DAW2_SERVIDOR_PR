@@ -9,23 +9,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ControllerAlbumsDetails extends AbstractController
 {
     /**
-     * @Route("/albums_details", name="albums_details")
+     * @Route("/album_details", name="album_details")
      */
     public function albums_details()
     {
-        return $this->render('albums-details.html.twig', [
-            'rutaAbout' => '/nosotros',
-            'rutaAlbum' => '/productos',
-            'rutaAlbumD' => '/album_details',
-            'rutabase' => '/',
-            'rutaBlog' => '/blog',
-            'rutaContact' => '/contacta',
-            'rutaGallery' => '/gallery',
-            'rutaLogin' => '/login',
-            'rutaRegister' => '/register',
-            'rutaSb' => '/sb',
-            'rutaTicket' => '/ticket',
-            'rutaTours' => '/tours',
-        ]);
+        return $this->render('albums-details.html.twig', []);
     }
 }

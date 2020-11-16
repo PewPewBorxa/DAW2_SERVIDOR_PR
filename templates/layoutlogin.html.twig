@@ -1,0 +1,86 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+	<title>Hnband | Music Event HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Hnband Music Event HTML Template">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="{{ asset('bootstrap.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('font-awesome.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('slicknav.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('owl.carousel.min.css', 'css') }}"/>
+
+
+	<link rel="stylesheet" href="{{ asset('style.css', 'css') }}"/>
+
+	<style>
+		body{
+			background-color:black;
+		}
+	</style>
+{% endblock %}
+
+{% block preloader %}
+
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+{% endblock %}
+
+{% block header %}
+	{% set page = app.request.attributes.get('_route') %}
+	<header>
+		<div class="header__warp">
+			<div class="row">
+				<div class="col-lg-2">
+					<a href="/" class="site__logo">
+						<img src="{{ asset('logo.png', 'images') }}" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+{% endblock %}
+
+
+{% block content %}
+{% endblock %}
+
+
+{% block footer %}
+	<footer class="footer__section">
+		<div class="container">
+			<div class="footer__copyright__text">
+				<p>Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved | This template is made with
+					<i class="fa fa-heart" aria-hidden="true"></i>
+					by
+					<a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</p>
+			</div>
+
+		</div>
+	</footer>
+{% endblock %}
+
+
+{% block scripts %}
+
+	<script src="{{ asset('vendor/jquery-3.2.1.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.slicknav.min.js', 'js') }}"></script>
+	<script src="{{ asset('owl.carousel.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.magnific-popup.min.js', 'js') }}"></script>
+	<script src="{{ asset('main.js', 'js') }}"></script>
+
+
+	<script src="{{ asset('jquery.jplayer.min.js', 'js') }}"></script>
+	<script src="{{ asset('jplayer.playlist.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.nicescroll.min.js', 'js') }}"></script>
+	<script src="{{ asset('audioInit-1.js', 'js') }}"></script>
+	<script src="{{ asset('videoInit.js', 'js') }}"></script>
+{% endblock %}

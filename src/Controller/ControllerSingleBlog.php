@@ -13,19 +13,6 @@ class ControllerSingleBlog extends AbstractController
      */
     public function sb()
     {
-        return $this->render('single-blog.html.twig', [
-            'rutaAbout' => '/nosotros',
-            'rutaAlbum' => '/productos',
-            'rutaAlbumD' => '/album_details',
-            'rutabase' => '/',
-            'rutaBlog' => '/blog',
-            'rutaContact' => '/contacta',
-            'rutaGallery' => '/gallery',
-            'rutaLogin' => '/login',
-            'rutaRegister' => '/register',
-            'rutaSb' => '/sb',
-            'rutaTicket' => '/ticket',
-            'rutaTours' => '/tours',
-        ]);
+        return $this->render('single-blog.html.twig', []);
     }
 }

@@ -13,19 +13,6 @@ class ControllerRegister extends AbstractController
      */
     public function register()
     {
-        return $this->render('register.html.twig', [
-            'rutaAbout' => '/nosotros',
-            'rutaAlbum' => '/productos',
-            'rutaAlbumD' => '/album_details',
-            'rutabase' => '/',
-            'rutaBlog' => '/blog',
-            'rutaContact' => '/contacta',
-            'rutaGallery' => '/gallery',
-            'rutaLogin' => '/login',
-            'rutaRegister' => '/register',
-            'rutaSb' => '/sb',
-            'rutaTicket' => '/ticket',
-            'rutaTours' => '/tours',
-        ]);
+        return $this->render('register.html.twig', []);
     }
 }

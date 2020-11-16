@@ -15,3 +15,16 @@ framework:
     #fragments: true
     php_errors:
         log: true
+
+    assets:
+        packages:
+            images:
+                base_path: '/img'
+            images_album:
+                base_path: '/img/albums'
+            css:
+                base_path: '/css'
+            js:
+                base_path: '/js'
+            php:
+                base_path: '/src/Controller'

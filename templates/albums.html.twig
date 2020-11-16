@@ -1,70 +1,5 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-	<title>Hnband | Music Event HTML Template</title>
-	<meta charset="UTF-8">
-	<meta name="description" content="Hnband Music Event HTML Template">
-	<meta name="keywords" content="music, html">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="/css/slicknav.min.css"/>
-	<link rel="stylesheet" href="/css/owl.carousel.min.css"/>
-
-	<!-- Main Stylesheets -->
-	<link rel="stylesheet" href="/css/style.css"/>
-
-
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-<body>
-	<!-- Page Preloder -->
-	{# <div id="preloder">
-		<div class="loader"></div>
-	</div> #}
-
-	<!-- Header Section -->
-	<header>
-		<div class="header__warp">
-			<div class="row">
-				<div class="col-lg-2">
-					<a href="/" class="site__logo">
-						<img src="/img/logo.png" alt="">
-					</a>
-				</div>
-				<div class="col-lg-8">
-					<ul class="main__menu">
-						<li><a href="/">Home</a></li>
-						<li><a href={{rutaAbout}}>About</a></li>
-						<li><a href={{rutaAlbum}} class="menu--active">Albums</a></li>
-						<li><a href={{rutaTours}}>Tours</a></li>
-						<li><a href="#">Pages</a>
-							<ul class="sub__menu">
-								<li><a href={{rutaGallery}}>Gallery</a></li>
-								<li><a href={{rutaTicket}}>Ticket</a></li>
-								<li><a href={{rutaAlbumD}}>Albums details</a></li>
-								<li><a href={{rutaSb}}>Blog single</a></li>
-							</ul>
-						</li>
-						<li><a href={{rutaBlog}}>Blog</a></li>
-						<li><a href={{rutaContact}}>Contact</a></li>
-						<li><a href={{rutaLogin}} class="site__btn">Login</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 text-lg-right d-none d-lg-block">
-					<a href="#" class="site__btn">Buy tickets</a>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- Header Section end -->
-
-	<!-- Page top section -->
+{% extends "layout.html.twig" %}
+{% block content %}
 	<section class="page-top-section">
 		<div class="container">
 			<div class="page-info-box">
@@ -81,155 +16,58 @@
 			</div>
 		</div>
 	</section>
-	<!-- Page top section end -->
 
-	<!-- Albums page -->
 	<section class="albums__page">
 		<div class="container">
 			<div class="albums__page__title">
 				<h2>Discover our newest musicalbums and singles</h2>
 			</div>
 			<div class="row">
-				{# album 1 #}
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src={{imagenAlbum1}} alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>{{tituloAlbum1}}</h4>
-									<p>{{generoAlbum1}}</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="/img/google-play.png" alt=""></a>
-							<a href="#"><img src="/img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-
-				{# album 2 #}
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src={{imagenAlbum2}} alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>{{tituloAlbum2}}</h4>
-									<p>{{generoAlbum2}}</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="/img/google-play.png" alt=""></a>
-							<a href="#"><img src="/img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-
-				{# album 3 #}
-				<div class="col-lg-4 col-md-6">
-					<div class="album_card">
-						<div class="album__pic">
-							<img src={{imagenAlbum3}} alt="">
-							<div class="album__title">
-								<div class="album_title_inner">
-									<h4>{{tituloAlbum3}}</h4>
-									<p>{{generoAlbum3}}</p>
-								</div>
-							</div>
-						</div>
-						<div class="album__links">
-							<a href="#"><img src="/img/google-play.png" alt=""></a>
-							<a href="#"><img src="/img/itune.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="site__pagination">
-				<a href={{r1}} {{claseP1}}>1</a>
-				<a href={{r2}} {{claseP2}}>2</a>
-				<a href={{r3}} {{claseP3}}>3</a>
-				<a href={{rn}} class="next-page">Next</a>
-			</div>
-		</div>
-	</section>
-	<!-- Albums page end -->
-	
-	<!-- Footer Section -->
-	<footer class="footer__section">
-		<div class="container">
-			<div class="footer-top">
-				<div class="row m-0">
-					<div class="col-lg-8 p-0">
-						<div class="footer-form-warp">
-							<div class="section-title">
-								<div class="sub-title">Contact us</div>
-								<h2>Got a Question?</h2>
-							</div>
-							<form>
-								<div class="row">
-									<div class="col-lg-6">
-										<input type="text" placeholder="Name">
-									</div>
-									<div class="col-lg-6">
-										<input type="text" placeholder="E-mail">
-									</div>
-									<div class="col-lg-12">
-										<textarea placeholder="Message"></textarea>
-										<button class="site__btn">Send Email</button>
+				{% set npag = app.request.attributes.get('pg') %}
+				{% set lowerLimit = (npag - 1) * items %}
+				{% set upperLimit = lowerLimit + items + 1 %}
+				{% for i in contenido %}
+					{% if loop.index > lowerLimit and loop.index < upperLimit %}
+						<div class="col-lg-4 col-md-6">
+							<div class="album_card">
+								<div class="album__pic">
+									<img src="{{ asset(i.imagen, 'images_album') }} " alt="imagen album">
+									<div class="album__title">
+										<div class="album_title_inner">
+											<h4>{{i.titulo}}</h4>
+											<p>{{i.genero}}</p>
+										</div>
 									</div>
 								</div>
-							</form>
+								<div class="album__links">
+									<a href="#"><img src="{{ asset('google-play.png', 'images') }}" alt=""></a>
+									<a href="#"><img src="{{ asset('itune.png', 'images') }}" alt=""></a>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 p-0">
-						<img src="img/footer-img.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-6">
-					<div class="info__box">
-						<div class="info_icon">
-							<i class="fa fa-map-marker"></i>
-						</div>
-						<p>333 Middle Winchendon Rd, <br> Rindge, NH 03461 </p>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="info__box info_box_center">
-						<div class="info_icon">
-							<i class="fa fa-map-marker"></i>
-						</div>
-						<p>125-711-811 | 125-668-886  <br> Support.music@gmail.com</p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="footer__social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-youtube-play"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-					</div>
-				</div>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<div class="footer__copyright__text">
-				<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-			</div>
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		</div>
-	</footer>
-	<!-- Footer Section end -->
+					{% endif %}
+				{% endfor %}
 
-	<!--====== Javascripts & Jquery ======-->
-	<script src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/main.js"></script>
-
-</body>
-</html>
+				{% set gener = app.request.attributes.get('gen') %}
+				<div class="site__pagination">
+					{% if npag != 1 %}
+						<a href='{{ path('productos',{ 'gen':gener, 'pg': npag - 1 }) }}' class="next-page">Prev</a>
+					{% endif %}
+					{% set paginado = ((contenido|length)/3)|round(0,'ceil') %}
+					{% for i in 1.. paginado %}
+						<a href='{{ path('productos',{ 'gen':gener, 'pg': i }) }}' {% if npag == i %} class="active" {% endif %}>{{i}}</a>
+					{% endfor %}
+					{% if npag != paginado %}
+						<a href='{{ path('productos',{ 'gen':gener, 'pg': npag + 1 }) }}' class="next-page">Next</a>
+					{% endif %}
+				</div>
+				<div class="site__pagination">
+					{% set genres_length = (genres|length - 1 ) %}
+					{% for i in 0.. genres_length %}
+						<a href='{{ path('productos',{ 'gen': genres[i] }) }}' {% if gener == genres[i] %} class="active" {% endif %}>{{genres[i]}}</a>
+					{% endfor %}
+					<a href='{{ path('productos',{ 'gen': 'all' }) }}' {% if gener == 'all' %} class="active" {% endif %}>TODOS</a>
+				</div>
+			</div>
+		</section>
+	{% endblock %}

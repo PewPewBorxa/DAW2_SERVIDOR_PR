@@ -1,0 +1,202 @@
+{% extends "base.html.twig" %}
+
+{% block head %}
+	<title>Hnband | Music Event HTML Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Hnband Music Event HTML Template">
+	<meta name="keywords" content="music, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="{{ asset('bootstrap.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('font-awesome.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('slicknav.min.css', 'css') }}"/>
+	<link rel="stylesheet" href="{{ asset('owl.carousel.min.css', 'css') }}"/>
+
+
+	<link rel="stylesheet" href="{{ asset('style.css', 'css') }}"/>
+{% endblock %}
+
+{% block preloader %}
+
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+{% endblock %}
+
+{% block header %}
+	{% set page = app.request.attributes.get('_route') %}
+	<header>
+		<div class="header__warp">
+			<div class="row">
+				<div class="col-lg-2">
+					<a href="/" class="site__logo">
+						<img src="{{ asset('logo.png', 'images') }}" alt="">
+					</a>
+				</div>
+				<div class="col-lg-8">
+					<ul class="main__menu">
+						<li>
+							<a href="/" {% if page == 'index' %} class="menu--active" {% endif %}>Home</a>
+						</li>
+						<li>
+							<a href="{{ path('nosotros') }}" {% if page == 'nosotros' %} class="menu--active" {% endif %}>About</a>
+						</li>
+						<li>
+							<a href="{{ path('productos') }}" {% if page == 'productos' %} class="menu--active" {% endif %}>Albums</a>
+						</li>
+						<li>
+							<a href="{{ path('tours') }}" {% if page == 'tours' %} class="menu--active" {% endif %}>Tours</a>
+						</li>
+						<li>
+							<a href="#">Pages</a>
+							<ul class="sub__menu">
+								<li>
+									<a href="{{ path('gallery') }}">Gallery</a>
+								</li>
+								<li>
+									<a href="{{ path('ticket') }}">Ticket</a>
+								</li>
+								<li>
+									<a href="{{ path('album_details') }}">Albums details</a>
+								</li>
+								<li>
+									<a href="{{ path('sb') }}">Blog single</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="{{ path('blog') }}" {% if page == 'blog' %} class="menu--active" {% endif %}>Blog</a>
+						</li>
+						<li>
+							<a href="{{ path('contacta') }}" {% if page == 'contacta' %} class="menu--active" {% endif %}>Contact</a>
+						</li>
+						{% set usuario = app.request.attributes.get('user') %}
+						{% if usuario != null %}
+							<li>
+								Hola, {{usuario}}
+							</li>
+						{% else %}
+							<li>
+								<a href="{{ path('login') }}" class="site__btn">Login</a>
+							</li>
+						{% endif %}
+
+
+					</ul>
+				</div>
+				<div class="col-lg-2 text-lg-right d-none d-lg-block">
+					<a href="#" class="site__btn">Buy tickets</a>
+				</div>
+			</div>
+		</div>
+	</header>
+{% endblock %}
+
+
+{% block content %}{% endblock %}
+
+
+{% block footer %}
+	<footer class="footer__section">
+		<div class="container">
+			<div class="footer-top">
+				<div class="row m-0">
+					<div class="col-lg-8 p-0">
+						<div class="footer-form-warp">
+							<div class="section-title">
+								<div class="sub-title">Contact us</div>
+								<h2>Got a Question?</h2>
+							</div>
+							<form>
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" placeholder="Name">
+									</div>
+									<div class="col-lg-6">
+										<input type="text" placeholder="E-mail">
+									</div>
+									<div class="col-lg-12">
+										<textarea placeholder="Message"></textarea>
+										<button class="site__btn">Send Email</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-4 p-0">
+						<img src="{{ asset('footer-img.jpg', 'images') }}" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="info__box">
+						<div class="info_icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<p>333 Middle Winchendon Rd,
+							<br>
+							Rindge, NH 03461
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="info__box info_box_center">
+						<div class="info_icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<p>125-711-811 | 125-668-886
+							<br>
+							Support.music@gmail.com</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer__social">
+						<a href="#">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__copyright__text">
+				<p>Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved | This template is made with
+					<i class="fa fa-heart" aria-hidden="true"></i>
+					by
+					<a href="https://colorlib.com" target="_blank">Colorlib</a>
+				</p>
+			</div>
+
+		</div>
+	</footer>
+{% endblock %}
+
+
+{% block scripts %}
+
+	<script src="{{ asset('vendor/jquery-3.2.1.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.slicknav.min.js', 'js') }}"></script>
+	<script src="{{ asset('owl.carousel.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.magnific-popup.min.js', 'js') }}"></script>
+	<script src="{{ asset('main.js', 'js') }}"></script>
+
+
+	<script src="{{ asset('jquery.jplayer.min.js', 'js') }}"></script>
+	<script src="{{ asset('jplayer.playlist.min.js', 'js') }}"></script>
+	<script src="{{ asset('jquery.nicescroll.min.js', 'js') }}"></script>
+	<script src="{{ asset('audioInit-1.js', 'js') }}"></script>
+	<script src="{{ asset('videoInit.js', 'js') }}"></script>
+{% endblock %}
