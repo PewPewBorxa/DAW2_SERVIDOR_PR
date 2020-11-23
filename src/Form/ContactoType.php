@@ -16,7 +16,9 @@ class ContactoType extends AbstractType
             ->add('name', TextType::class)
             ->add('email', EmailType::class)
             ->add('website', TextType::class)
-            ->add('message', TextareaType::class);
+            ->add('message', TextareaType::class)
+            ->add('send', SubmitType::class)
+            ->add('date', HiddenType::class, ['mapped'=>false]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
