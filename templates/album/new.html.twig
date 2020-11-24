@@ -1,0 +1,16 @@
+{% extends 'layoutcrud.html.twig' %}
+
+{% block title %}New Album
+{% endblock %}
+
+{% block content %}
+	<div style='margin-top:100px'>
+		<div>
+			<h1>Create new Album</h1>
+
+			{{ include('album/_form.html.twig') }}
+
+			<a class='site__btn' href="{{ path('album_index') }}">back to list</a>
+		</div>
+	</div>
+{% endblock %}

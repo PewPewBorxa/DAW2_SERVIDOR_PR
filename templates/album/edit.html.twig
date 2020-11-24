@@ -1,0 +1,33 @@
+{% extends 'layoutcrud.html.twig' %}
+
+{% block title %}Edit Album
+{% endblock %}
+
+{% block content %}
+	<style>
+		#agh {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#divEdit {
+			justify-content: center;
+		}
+
+		#botones {
+			display: flex;
+			align-content: space-between;
+		}
+	</style>
+	<div id='agh'>
+		<div id='divEdit'>
+			<h1>Edit Album</h1>
+			{{ include('album/_form.html.twig', {'button_label': 'Update'}) }}
+
+			<a class='site__btn' href="{{ path('album_index') }}">back to list</a>
+
+			{{ include('album/_delete_form.html.twig') }}
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{{ form_start(form,{'attr': {'class':'contact-form'}})}}
+<div class="row">
+	<div class="col-lg-4">
+		{{form_label(form.imagen)}}
+		{{ form_widget(form.imagen,{'attr':{'placeholder':'Imagen'}})}}
+	</div>
+	<div class="col-lg-4">
+		{{form_label(form.titulo)}}
+		{{ form_widget(form.titulo,{'attr':{'placeholder':'Titulo'}})}}
+	</div>
+	<div class="col-lg-4">
+		{{form_label(form.genero)}}
+		{{ form_widget(form.genero,{'attr':{'placeholder':'Género'}})}}
+	</div>
+	<button class="site__btn">{{ button_label|default('Save') }}</button>
+	{{ form_end(form) }}

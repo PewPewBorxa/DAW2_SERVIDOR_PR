@@ -1,0 +1,42 @@
+{% extends 'layoutcrud.html.twig' %}
+
+{% block title %}Album index
+{% endblock %}
+
+{% block content %}
+	<div style='margin-top:100px'>
+		<h1>Album index</h1>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Imagen</th>
+					<th>Titulo</th>
+					<th>Genero</th>
+					<th>actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for album in albums %}
+					<tr>
+						<td>{{ album.id }}</td>
+						<td>{{ album.imagen }}</td>
+						<td>{{ album.titulo }}</td>
+						<td>{{ album.genero }}</td>
+						<td>
+							<a href="{{ path('album_show', {'id': album.id}) }}">show</a>
+							<a href="{{ path('album_edit', {'id': album.id}) }}">edit</a>
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="5">no records found</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+		<a href="{{ path('album_new') }}">Create new</a>
+		<div>
+		{% endblock %}

@@ -79,6 +79,12 @@
 					{{ form_widget(form.send,{'attr':{'class':'site__btn','value':'Send'}})}}
 				</div>
 				{{ form_end(form) }}
+				{% if alert != '' %}
+					<script type="text/javascript">
+						alert('Tu información ha sido enviada');
+					</script>
+					{% set alert = '' %}
+				{% endif %}
 			</div>
 		</div>
 	</form>
