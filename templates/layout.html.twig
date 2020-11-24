@@ -73,13 +73,17 @@
 						{% set usuario = app.request.attributes.get('user') %}
 						{% if usuario != null %}
 							<li>
-								Hola, {{usuario}}
+								Hola,
+								{{usuario}}
 							</li>
 						{% else %}
 							<li>
 								<a href="{{ path('login') }}" class="site__btn">Login</a>
 							</li>
 						{% endif %}
+						<li>
+							<a href="{{ path('admin') }}" class="site__btn">Admin</a>
+						</li>
 
 
 					</ul>
