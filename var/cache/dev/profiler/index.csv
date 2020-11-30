@@ -506,3 +506,14 @@ da4562,::1,GET,http://localhost:8000/album/,1606211248,,200
 a4f681,::1,GET,http://localhost:8000/admin,1606211257,,200
 1ebd77,::1,GET,http://localhost:8000/contacto/,1606211261,,200
 b996a0,::1,GET,http://localhost:8000/,1606211263,,200
+bbf3c0,::1,GET,http://localhost:8000/,1606735532,,200
+2f1c33,::1,GET,http://localhost:8000/favicon.ico,1606735535,61fe73,404
+61fe73,::1,GET,http://localhost:8000/favicon.ico,1606735535,,404
+65a8cf,::1,GET,http://localhost:8000/admin,1606735545,,200
+2319ff,::1,GET,http://localhost:8000/album/,1606735553,66b7a1,500
+66b7a1,::1,GET,http://localhost:8000/album/,1606735553,,500
+ed463a,::1,GET,http://localhost:8000/album/,1606735564,,200
+77a9fb,::1,GET,http://localhost:8000/admin,1606735571,,200
+ba431b,::1,GET,http://localhost:8000/contacto/,1606735574,,200
+837676,::1,GET,http://localhost:8000/admin,1606735578,,200
+383a45,::1,GET,http://localhost:8000/contacto/,1606735645,,200

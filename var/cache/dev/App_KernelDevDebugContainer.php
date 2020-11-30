@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerJctBVtR\App_KernelDevDebugContainer([
     'container.build_hash' => 'JctBVtR',
-    'container.build_id' => '704ae0fd',
-    'container.build_time' => 1606209770,
+    'container.build_id' => '60050f14',
+    'container.build_time' => 1606735518,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerJctBVtR');
