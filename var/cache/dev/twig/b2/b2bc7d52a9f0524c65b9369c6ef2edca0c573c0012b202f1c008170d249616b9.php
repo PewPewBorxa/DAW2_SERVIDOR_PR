@@ -425,6 +425,6 @@ class __TwigTemplate_8d87450cd6d9b8d605c03c7e24e3ea5b6709d0a9cf7b3b5a02ab99bc08e
 \t</div>
 
 </div></footer>{% endblock %}{% block scripts %}<script src=\"{{ asset('vendor/jquery-3.2.1.min.js', 'js') }}\"></script><script src=\"{{ asset('jquery.slicknav.min.js', 'js') }}\"></script><script src=\"{{ asset('owl.carousel.min.js', 'js') }}\"></script><script src=\"{{ asset('jquery.magnific-popup.min.js', 'js') }}\"></script><script src=\"{{ asset('main.js', 'js') }}\"></script><script src=\"{{ asset('jquery.jplayer.min.js', 'js') }}\"></script><script src=\"{{ asset('jplayer.playlist.min.js', 'js') }}\"></script><script src=\"{{ asset('jquery.nicescroll.min.js', 'js') }}\"></script><script src=\"{{ asset('audioInit-1.js', 'js') }}\"></script><script src=\"{{ asset('videoInit.js', 'js') }}\"></script>{% endblock %}
-", "layoutcrud.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\layoutcrud.html.twig");
+", "layoutcrud.html.twig", "C:\\Users\\Borja\\daw2\\templates\\layoutcrud.html.twig");
     }
 }

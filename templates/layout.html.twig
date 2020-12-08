@@ -70,17 +70,6 @@
 						<li>
 							<a href="{{ path('contacta') }}" {% if page == 'contacta' %} class="menu--active" {% endif %}>Contact</a>
 						</li>
-						{% set usuario = app.request.attributes.get('user') %}
-						{% if usuario != null %}
-							<li>
-								Hola,
-								{{usuario}}
-							</li>
-						{% else %}
-							<li>
-								<a href="{{ path('login') }}" class="site__btn">Login</a>
-							</li>
-						{% endif %}
 						<li>
 							<a href="{{ path('admin') }}" class="site__btn">Admin</a>
 						</li>

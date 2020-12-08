@@ -244,6 +244,6 @@ class __TwigTemplate_f6d8b593dce48fb7ac2b0c4bbdffd6beac5b0fea93db80518fba63f771c
 \t\t<a style='margin-left:30px' href=\"{{ path('admin') }}\">Back to admin</a>
 \t</div>
 {% endblock %}
-", "contacto/index.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\contacto\\index.html.twig");
+", "contacto/index.html.twig", "C:\\Users\\Borja\\daw2\\templates\\contacto\\index.html.twig");
     }
 }

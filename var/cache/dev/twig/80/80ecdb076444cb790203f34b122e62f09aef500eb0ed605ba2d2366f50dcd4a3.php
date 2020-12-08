@@ -102,6 +102,6 @@ class __TwigTemplate_e820c802696ecc9f4379a5b52de6cb6beb5bf02c665ec6378ad5ec5f8e0
 \t\t<a href='/contacto' class=\"site__btn\">Contacto</a>
 \t</div>
 {% endblock %}
-", "admin.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\admin.html.twig");
+", "admin.html.twig", "C:\\Users\\Borja\\daw2\\templates\\admin.html.twig");
     }
 }

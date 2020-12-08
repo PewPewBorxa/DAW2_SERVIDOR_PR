@@ -394,6 +394,6 @@ class __TwigTemplate_123a4d9370a51adc123d2486544bf859c21d611cca83777bcff86b91fb9
 \t<script src=\"{{ asset('audioInit-1.js', 'js') }}\"></script>
 \t<script src=\"{{ asset('videoInit.js', 'js') }}\"></script>
 {% endblock %}
-", "layoutlogin.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\layoutlogin.html.twig");
+", "layoutlogin.html.twig", "C:\\Users\\Borja\\daw2\\templates\\layoutlogin.html.twig");
     }
 }

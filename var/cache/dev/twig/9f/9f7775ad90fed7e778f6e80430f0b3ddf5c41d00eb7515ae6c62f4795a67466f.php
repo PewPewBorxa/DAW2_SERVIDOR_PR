@@ -81,6 +81,6 @@ class __TwigTemplate_1311f55c244b49d3875e7854c6d78593d449cd56234328c66628a476d19
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ album.id) }}\">
     <button class=\"site__btn\">Delete</button>
 </form>
-", "album/_delete_form.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\album\\_delete_form.html.twig");
+", "album/_delete_form.html.twig", "C:\\Users\\Borja\\daw2\\templates\\album\\_delete_form.html.twig");
     }
 }

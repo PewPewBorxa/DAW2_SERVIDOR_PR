@@ -230,6 +230,6 @@ class __TwigTemplate_5508bd7573e24cb3e77a6821aef9318b0166953fdef1eae0dc5450c5c5a
 \t\t<a style='margin-left:30px' href=\"{{ path('admin') }}\">Back to admin</a>
 \t\t<div>
 \t\t{% endblock %}
-", "album/index.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\album\\index.html.twig");
+", "album/index.html.twig", "C:\\Users\\Borja\\daw2\\templates\\album\\index.html.twig");
     }
 }
