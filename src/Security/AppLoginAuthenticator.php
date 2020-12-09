@@ -97,7 +97,7 @@ class AppLoginAuthenticator extends AbstractFormLoginAuthenticator implements Pa
         }
 
         // For example : return new RedirectResponse($this->urlGenerator->generate('some_route'));
-        return header('Location: /');
+        return new RedirectResponse($this->urlGenerator->generate('index'));
     }
 
     protected function getLoginUrl()

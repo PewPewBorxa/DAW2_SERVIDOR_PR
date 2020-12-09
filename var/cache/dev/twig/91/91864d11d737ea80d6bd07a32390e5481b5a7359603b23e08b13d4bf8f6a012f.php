@@ -245,15 +245,50 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
         }
         echo ">Contact</a>
 \t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a href=\"";
-        // line 74
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
-        echo "\" class=\"site__btn\">Admin</a>
-\t\t\t\t\t\t</li>
-
-
-\t\t\t\t\t</ul>
+\t\t\t\t\t\t";
+        // line 73
+        if ( !(isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 73, $this->source); })())) {
+            // line 74
+            echo "\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"";
+            // line 75
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\" class=\"site__btn\">Log-In</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t";
+        } else {
+            // line 78
+            echo "\t\t\t\t\t\t\t<li style=\"color:white\">
+\t\t\t\t\t\t\t\tHola
+\t\t\t\t\t\t\t\t";
+            // line 80
+            echo twig_escape_filter($this->env, (isset($context["user"]) || array_key_exists("user", $context) ? $context["user"] : (function () { throw new RuntimeError('Variable "user" does not exist.', 80, $this->source); })()), "html", null, true);
+            echo "
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"";
+            // line 83
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Log-Out</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t";
+        }
+        // line 86
+        echo "
+\t\t\t\t\t\t";
+        // line 87
+        if ((0 === twig_compare((isset($context["admin"]) || array_key_exists("admin", $context) ? $context["admin"] : (function () { throw new RuntimeError('Variable "admin" does not exist.', 87, $this->source); })()), true))) {
+            // line 88
+            echo "\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"";
+            // line 89
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin");
+            echo "\" class=\"site__btn\">Admin</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t";
+        }
+        // line 92
+        echo "\t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-2 text-lg-right d-none d-lg-block\">
 \t\t\t\t\t<a href=\"#\" class=\"site__btn\">Buy tickets</a>
@@ -270,7 +305,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 
     }
 
-    // line 89
+    // line 103
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -288,7 +323,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 
     }
 
-    // line 92
+    // line 106
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -298,7 +333,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 93
+        // line 107
         echo "\t<footer class=\"footer__section\">
 \t\t<div class=\"container\">
 \t\t\t<div class=\"footer-top\">
@@ -327,7 +362,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 \t\t\t\t\t</div>
 \t\t\t\t\t<div class=\"col-lg-4 p-0\">
 \t\t\t\t\t\t<img src=\"";
-        // line 120
+        // line 134
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("footer-img.jpg", "images"), "html", null, true);
         echo "\" alt=\"\">
 \t\t\t\t\t</div>
@@ -396,7 +431,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 
     }
 
-    // line 181
+    // line 195
     public function block_scripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -406,48 +441,48 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "scripts"));
 
-        // line 182
+        // line 196
         echo "
 \t<script src=\"";
-        // line 183
+        // line 197
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendor/jquery-3.2.1.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 184
+        // line 198
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery.slicknav.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 185
+        // line 199
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("owl.carousel.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 186
+        // line 200
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery.magnific-popup.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 187
+        // line 201
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("main.js", "js"), "html", null, true);
         echo "\"></script>
 
 
 \t<script src=\"";
-        // line 190
+        // line 204
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery.jplayer.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 191
+        // line 205
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jplayer.playlist.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 192
+        // line 206
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("jquery.nicescroll.min.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 193
+        // line 207
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("audioInit-1.js", "js"), "html", null, true);
         echo "\"></script>
 \t<script src=\"";
-        // line 194
+        // line 208
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("videoInit.js", "js"), "html", null, true);
         echo "\"></script>
 ";
@@ -471,7 +506,7 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 
     public function getDebugInfo()
     {
-        return array (  451 => 194,  447 => 193,  443 => 192,  439 => 191,  435 => 190,  429 => 187,  425 => 186,  421 => 185,  417 => 184,  413 => 183,  410 => 182,  400 => 181,  331 => 120,  302 => 93,  292 => 92,  274 => 89,  251 => 74,  241 => 71,  231 => 68,  223 => 63,  217 => 60,  211 => 57,  205 => 54,  192 => 48,  182 => 45,  172 => 42,  164 => 39,  155 => 33,  148 => 28,  145 => 27,  135 => 26,  121 => 20,  111 => 19,  99 => 16,  93 => 13,  89 => 12,  85 => 11,  81 => 10,  73 => 4,  63 => 3,  40 => 1,);
+        return array (  486 => 208,  482 => 207,  478 => 206,  474 => 205,  470 => 204,  464 => 201,  460 => 200,  456 => 199,  452 => 198,  448 => 197,  445 => 196,  435 => 195,  366 => 134,  337 => 107,  327 => 106,  309 => 103,  291 => 92,  285 => 89,  282 => 88,  280 => 87,  277 => 86,  271 => 83,  265 => 80,  261 => 78,  255 => 75,  252 => 74,  250 => 73,  241 => 71,  231 => 68,  223 => 63,  217 => 60,  211 => 57,  205 => 54,  192 => 48,  182 => 45,  172 => 42,  164 => 39,  155 => 33,  148 => 28,  145 => 27,  135 => 26,  121 => 20,  111 => 19,  99 => 16,  93 => 13,  89 => 12,  85 => 11,  81 => 10,  73 => 4,  63 => 3,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -548,11 +583,25 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 \t\t\t\t\t\t<li>
 \t\t\t\t\t\t\t<a href=\"{{ path('contacta') }}\" {% if page == 'contacta' %} class=\"menu--active\" {% endif %}>Contact</a>
 \t\t\t\t\t\t</li>
-\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t<a href=\"{{ path('admin') }}\" class=\"site__btn\">Admin</a>
-\t\t\t\t\t\t</li>
+\t\t\t\t\t\t{% if not user %}
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"{{ path('app_login') }}\" class=\"site__btn\">Log-In</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t{% else %}
+\t\t\t\t\t\t\t<li style=\"color:white\">
+\t\t\t\t\t\t\t\tHola
+\t\t\t\t\t\t\t\t{{ user }}
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"{{ path('app_logout') }}\">Log-Out</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t{% endif %}
 
-
+\t\t\t\t\t\t{% if admin == true %}
+\t\t\t\t\t\t\t<li>
+\t\t\t\t\t\t\t\t<a href=\"{{ path('admin') }}\" class=\"site__btn\">Admin</a>
+\t\t\t\t\t\t\t</li>
+\t\t\t\t\t\t{% endif %}
 \t\t\t\t\t</ul>
 \t\t\t\t</div>
 \t\t\t\t<div class=\"col-lg-2 text-lg-right d-none d-lg-block\">
@@ -671,6 +720,6 @@ class __TwigTemplate_57f49146b862c1005e4a5222855ffd93da234c00ce600666303c52aa760
 \t<script src=\"{{ asset('audioInit-1.js', 'js') }}\"></script>
 \t<script src=\"{{ asset('videoInit.js', 'js') }}\"></script>
 {% endblock %}
-", "layout.html.twig", "C:\\Users\\Borja\\daw2\\templates\\layout.html.twig");
+", "layout.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\layout.html.twig");
     }
 }

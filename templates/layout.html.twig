@@ -70,11 +70,25 @@
 						<li>
 							<a href="{{ path('contacta') }}" {% if page == 'contacta' %} class="menu--active" {% endif %}>Contact</a>
 						</li>
-						<li>
-							<a href="{{ path('admin') }}" class="site__btn">Admin</a>
-						</li>
+						{% if not user %}
+							<li>
+								<a href="{{ path('app_login') }}" class="site__btn">Log-In</a>
+							</li>
+						{% else %}
+							<li style="color:white">
+								Hola
+								{{ user }}
+							</li>
+							<li>
+								<a href="{{ path('app_logout') }}">Log-Out</a>
+							</li>
+						{% endif %}
 
-
+						{% if admin == true %}
+							<li>
+								<a href="{{ path('admin') }}" class="site__btn">Admin</a>
+							</li>
+						{% endif %}
 					</ul>
 				</div>
 				<div class="col-lg-2 text-lg-right d-none d-lg-block">

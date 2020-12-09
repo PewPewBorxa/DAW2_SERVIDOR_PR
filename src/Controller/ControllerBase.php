@@ -15,6 +15,16 @@ class ControllerBase extends AbstractController
      */
     public function index()
     {
-        return $this->render('bratan.html.twig', []);
+        $user = $this->getUser();
+        if ($user != null) {
+            $roles = $user->getRoles();
+            $admin = (in_array('ROLE_ADMIN', $roles)) ? true : false;
+        } else {
+            $admin = false;
+        }
+        return $this->render('bratan.html.twig', [
+            'user' => ($user != null) ? $user->getUsername() : '',
+            'admin' => $admin,
+        ]);
     }
 }
