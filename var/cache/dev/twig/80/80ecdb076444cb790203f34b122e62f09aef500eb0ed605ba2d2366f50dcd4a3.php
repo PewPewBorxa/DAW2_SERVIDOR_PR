@@ -68,6 +68,7 @@ class __TwigTemplate_e820c802696ecc9f4379a5b52de6cb6beb5bf02c665ec6378ad5ec5f8e0
         echo "\t<div style='margin-top:100px'>
 \t\t<a href='/album' class=\"site__btn\">Album</a>
 \t\t<a href='/contacto' class=\"site__btn\">Contacto</a>
+\t\t<a href='/user' class=\"site__btn\">User</a>
 \t</div>
 ";
         
@@ -100,8 +101,9 @@ class __TwigTemplate_e820c802696ecc9f4379a5b52de6cb6beb5bf02c665ec6378ad5ec5f8e0
 \t<div style='margin-top:100px'>
 \t\t<a href='/album' class=\"site__btn\">Album</a>
 \t\t<a href='/contacto' class=\"site__btn\">Contacto</a>
+\t\t<a href='/user' class=\"site__btn\">User</a>
 \t</div>
 {% endblock %}
-", "admin.html.twig", "C:\\Users\\Borja\\daw2\\templates\\admin.html.twig");
+", "admin.html.twig", "C:\\Users\\botolo\\DAW2\\templates\\admin.html.twig");
     }
 }

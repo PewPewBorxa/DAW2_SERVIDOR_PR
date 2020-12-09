@@ -31,6 +31,8 @@ return [
         '/register' => [[['_route' => 'app_register', '_controller' => 'App\\Controller\\RegistrationController::register'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityLoginController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityLoginController::logout'], null, null, null, false, false, null]],
+        '/user' => [[['_route' => 'user_index', '_controller' => 'App\\Controller\\UserController::index'], null, ['GET' => 0], null, true, false, null]],
+        '/user/new' => [[['_route' => 'user_new', '_controller' => 'App\\Controller\\UserController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/add' => [[['_route' => 'add', '_controller' => 'App\\Controller\\addController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
@@ -61,6 +63,11 @@ return [
                     .'|(*:259)'
                 .')'
                 .'|/productos(?:/([^/]++)(?:/([^/]++))?)?(*:306)'
+                .'|/user/([^/]++)(?'
+                    .'|(*:331)'
+                    .'|/edit(*:344)'
+                    .'|(*:352)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -77,8 +84,11 @@ return [
         238 => [[['_route' => 'contacto_show', '_controller' => 'App\\Controller\\ContactoController::show'], ['id'], ['GET' => 0], null, false, true, null]],
         251 => [[['_route' => 'contacto_edit', '_controller' => 'App\\Controller\\ContactoController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
         259 => [[['_route' => 'contacto_delete', '_controller' => 'App\\Controller\\ContactoController::delete'], ['id'], ['DELETE' => 0], null, false, true, null]],
-        306 => [
-            [['_route' => 'productos', 'gen' => 'all', 'pg' => '1', '_controller' => 'App\\Controller\\ControllerAlbums::productos'], ['gen', 'pg'], null, null, false, true, null],
+        306 => [[['_route' => 'productos', 'gen' => 'all', 'pg' => '1', '_controller' => 'App\\Controller\\ControllerAlbums::productos'], ['gen', 'pg'], null, null, false, true, null]],
+        331 => [[['_route' => 'user_show', '_controller' => 'App\\Controller\\UserController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        344 => [[['_route' => 'user_edit', '_controller' => 'App\\Controller\\UserController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        352 => [
+            [['_route' => 'user_delete', '_controller' => 'App\\Controller\\UserController::delete'], ['id'], ['DELETE' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

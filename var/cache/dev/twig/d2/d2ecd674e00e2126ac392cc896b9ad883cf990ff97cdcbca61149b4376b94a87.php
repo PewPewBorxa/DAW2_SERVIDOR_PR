@@ -137,7 +137,7 @@ class __TwigTemplate_a52d9122e092c8d30faacc1851a5a8e2daaad11613cafac296ca87ee6db
 \t\t\t\t";
         // line 41
         echo "
-\t\t\t\t<button class=\"btn btn-lg btn-primary\" type=\"submit\">
+\t\t\t\t<button class=\"site__btn btn-lg btn-primary\" type=\"submit\">
 \t\t\t\t\tSign in
 \t\t\t\t</button>
 \t\t\t\t<button class=\"site__btn\"><a href='";
@@ -214,7 +214,7 @@ class __TwigTemplate_a52d9122e092c8d30faacc1851a5a8e2daaad11613cafac296ca87ee6db
 \t\t\t\t\t\t\t        </div>
 \t\t\t\t\t\t\t    #}
 
-\t\t\t\t<button class=\"btn btn-lg btn-primary\" type=\"submit\">
+\t\t\t\t<button class=\"site__btn btn-lg btn-primary\" type=\"submit\">
 \t\t\t\t\tSign in
 \t\t\t\t</button>
 \t\t\t\t<button class=\"site__btn\"><a href='{{ path('app_register') }}'>Register</a></button> 
